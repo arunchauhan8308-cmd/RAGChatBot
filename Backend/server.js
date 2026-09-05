@@ -1,6 +1,7 @@
 const express = require('express')
 const webSocket = require('ws')
-const http = require('http')
+const http = require('http');
+const { json } = require('stream/consumers');
 
 // initialize application
 const app = express();
@@ -11,20 +12,42 @@ const httpServer = http.createServer(app);
 
 const wss = new webSocket.WebSocketServer({ server: httpServer});
 
-wss.on('connection', (socket)=> {
-    console.log('connection make')
+// create a room
+const rooms = new Map();
+console.log('Socket Before: ', rooms)
 
-    // socket.on('message', (message)=> {
-    //     console.log(message.toString())
-    // })
+wss.on('connection', (socket)=> {
+
+    socket.send('Connection ban gya ji')
 
     socket.on('message', (message)=> {
-        wss.clients.forEach(client=> {
-            if ( client.OPEN === client.readyState) {
-                socket.send('Connection Alive')
+        const data = JSON.parse(message.toString());
+
+        // join
+        if ( data.type === 'join') {
+            // is room exits
+            if (!rooms.has(data.rooms)) {
+                // create room
+                rooms.set(data.rooms, new Set());
             }
-        })
+            // join
+            rooms.get(data.rooms).add(socket);
+            console.log('Socket After: ', rooms)
+        }
     })
+
+    // disconnection handler
+    socket.on('close', ()=> {
+        socket.send('connection hat gya ji')
+    })
+
+    // socket.on('message', (message)=> {
+    //     wss.clients.forEach(client=> {
+    //         if ( client.OPEN === client.readyState) {
+    //             socket.send('Connection Alive')
+    //         }
+    //     })
+    // })
 });
 
 app.get('/', (req, res)=> {
