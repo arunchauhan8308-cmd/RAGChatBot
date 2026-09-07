@@ -7,15 +7,15 @@ import img from '../../public/main.avif'
 const MainPage = () => {
     return (
         <>
-            <div>
-                <div>
-                    <nav>
+            <div className='wrapper'>
+                <div className='main-container'>
+                    <nav className='nav'>
                         <div className='logo'>
-                            <h1>Smart Arun</h1>
+                            <h1>MU Connect</h1>
                         </div>
                         <div className='about-page'>
                             <a href="/about">About us</a>
-                            <IonIcon icon={chevronDownOutline} />
+                            <IonIcon className='icon' icon={chevronDownOutline} />
                         </div>
                         <div className='links'>
                             <a href="/login">login</a>
@@ -30,10 +30,18 @@ const MainPage = () => {
                             <div>
                                 <p className='paragraph'>From fee structures to semester circulars, your AI campus companion has the official details ready.</p>
                             </div>
+                            <div>
+                                <button className='ask-btn'>Chat Now</button>
+                            </div>
                         </div>
                         <div>
                             <img className='image' src={img} alt="main" />
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1></h1>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-  --font-primary: "Hedvig Letters Serif", serif;
-  --primary-color: red;
-  --btn-color: hsla(120, 95%, 25%, 0.9);
+  --primary-font: "Rubik", sans-serif;
+  --primary-color: hsla(240, 100%, 50%,0.5);
+  --btn-color: hsla(64, 17%, 39%, 0.9);
+  --background-color: #f8f8f8;
 }
 
 @font-face {
