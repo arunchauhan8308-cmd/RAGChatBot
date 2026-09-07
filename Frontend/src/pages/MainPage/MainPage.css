@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: red;
-    --primary-font: "Lato", sans-serif;
-    --btn-color: hsla(120, 95%, 25%, 0.9);
-}
 nav {
     display: flex;
     flex-direction: row;

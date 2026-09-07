@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+:root {
+  --font-primary: "Hedvig Letters Serif", serif;
+  --primary-color: red;
+  --btn-color: hsla(120, 95%, 25%, 0.9);
+}
+
 @font-face {
   font-family: "Purgatory";
   src: url("./assets/fonts/Purgatory.ttf") format("truetype");
