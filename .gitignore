@@ -2,3 +2,4 @@ Backend/myvenv
 Backend/VECTOR
 
 node_modules/
+.vscode
