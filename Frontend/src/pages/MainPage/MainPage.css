@@ -54,7 +54,8 @@ nav {
 .main-wrapper {
     display: flex;
     margin: 40px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .text-wrapper {
@@ -63,23 +64,29 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    width: 50%;
+    max-width: 50%;
 }
+
 .haeding-left {
-    font-size: 40px;
+    font-size: 50px;
     display: block;
+    font-weight: 800;
     font-family: var(--primary-font);
 }
 
 .ask {
     font-family: "Purgatory";
     font-size: 50px;
-    color: var(--primary-color);
+    color: var(--btn-color);
 }
 .paragraph {
     font-family: var(--primary-font);
     font-weight: 500;
+    max-width: 80%;
+    font-size: 13px;
 }
 .image {
-    height: 400px;
+    height: 450px;
     width: auto;
 }
