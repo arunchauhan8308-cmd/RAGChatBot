@@ -2,7 +2,7 @@
 
 :root {
   --primary-font: "Rubik", sans-serif;
-  --primary-color: hsla(240, 100%, 50%,0.5);
+  --primary-color: hsla(240, 100%, 50%, 0.502);
   --btn-color: hsla(64, 17%, 39%, 0.9);
   --background-color: #f8f8f8;
 }

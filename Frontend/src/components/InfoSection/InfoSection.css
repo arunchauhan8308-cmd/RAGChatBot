@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.images-container {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0px;
+}
+.mu-images {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mu-images div img{
+    width: 100px;
+    height: 100px;
+}
+.mu-images div h2 {
+    font-family: var(--primary-font);
+    color: var(--background-color);
+}

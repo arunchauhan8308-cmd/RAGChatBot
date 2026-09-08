@@ -3,6 +3,8 @@ import { IonIcon } from '@ionic/react'
 import { chevronBackOutline, chevronDownOutline } from 'ionicons/icons'
 import './MainPage.css'
 import img from '../../public/main.avif'
+import InfoSection from '../../components/InfoSection/InfoSection'
+import CampusDesk from '../../components/CampusDesk/CampusDesk'
 
 const MainPage = () => {
     return (
@@ -45,6 +47,8 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+            <InfoSection/>
+            <CampusDesk/>
         </>
     )
 }
