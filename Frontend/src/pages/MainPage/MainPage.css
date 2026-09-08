@@ -58,9 +58,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0px 100px 0px 130px;
+    padding: 20px 100px 80px 130px;
     background-color: #f8f8f8;
-    padding-bottom: 80px;
 }
 
 .text-wrapper {
