@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "langchain": "^1.5.10",
+    "pymupdf-node": "^0.0.5"
+  }
+}
