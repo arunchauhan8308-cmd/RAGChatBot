@@ -2,6 +2,8 @@
 - Load the data using the Directory Loader
 - Load all file in the Directory and return the file 
 
+- completed
+
 ## Create the Chunks 
 - get the files location and then create the chunk in the chunk_size = 500, with the chunk_overlap = 50 
 - Then Return the Chunks.
